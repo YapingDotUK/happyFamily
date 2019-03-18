@@ -1,0 +1,89 @@
+/***********1.	当更新Joomla后，原有的CSS不起作用？ 1)字体不起作用了************/
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.menu-content {
+    float: left;
+    font-size: 13px;
+    width: 100%;
+}
+
+.menu-content h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 3px 0;
+}
+
+.menu-content a {
+    color: #871717;
+    padding-top: 40px;
+    text-decoration: none;
+}
+
+.menu-content p {
+    padding: 4px 0;
+}
+
+.menu-content table {
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+.menu-content table td {
+    padding: 7px 0 3px;
+    vertical-align: top;
+}
+
+.menu-content table img {
+    margin: 0 0 0 5px;
+    vertical-align: bottom;
+}
+
+.dottedline td {
+    border-top: 1px dotted #c1c1c1;
+}
+
+.cat-description {
+    color: #777777;
+    font-style: italic;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.catagory {
+    color: #871717;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.heading {
+    color: #990033;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.heading a {
+    text-decoration: none;
+}
+
+.heading span {
+    float: right;
+}
+
+/*****2) 背景图片没有了*****/
+
+body.site {
+
+    background-image: url(‘/image/background.jpg’)
+}
